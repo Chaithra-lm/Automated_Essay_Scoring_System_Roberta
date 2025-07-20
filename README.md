@@ -1,52 +1,73 @@
-# Automatic Essay Scoring System using RoBERTa
+📚 Automatic Essay Scoring System using RoBERTa
+This repository presents an Automatic Essay Scoring (AES) system built on the RoBERTa language model. Designed to evaluate essays with near-human consistency, our system achieved a Cohen’s Kappa score of 0.51, indicating a reasonable level of agreement with expert human raters. A live demo is included as part of the project presentation.
 
-This repository contains the code and resources for our Automatic Essay Scoring (AES) system using the RoBERTa model. Our system achieved a Cohen Kappa score of 0.51, demonstrating a reasonable level of agreement with human raters. The repository also includes a demo video embedded in the PowerPoint presentation shared in this repository.
+📂 Repository Contents
+README.md – Project documentation
 
-## Contents
+demo/AES_Demo.pptx – PowerPoint presentation with embedded demo video
 
-- `README.md`: This file.
+data/ – Directory for dataset (user-provided)
 
-## Dataset
+Code files and training notebooks
 
-We used the dataset from the [Kaggle Learning Agency Lab Automated Essay Scoring 2 competition](https://www.kaggle.com/competitions/learning-agency-lab-automated-essay-scoring-2). Please note that you need to agree to the competition's rules to download the dataset.
+📊 Dataset
+We used the official dataset from the
+Kaggle: Learning Agency Lab - Automated Essay Scoring 2 competition.
 
-## Requirements
+📌 Note: You must accept the competition rules on Kaggle to download and use the dataset.
 
+Once downloaded, place the data files inside the data/ folder following the expected structure provided in the codebase.
 
-flask==2.0.1
-werkzeug==2.0.1
-torch
-transformers
-tqdm
-pandas
+🧪 Model Performance
+Model: RoBERTa (fine-tuned using Hugging Face Transformers)
 
+Scoring Metric: Quadratic Weighted Kappa (QWK)
 
-## Usage
+Achieved Score: 0.51
 
-1. Prepare the dataset:
-    - Download the dataset from the [Kaggle competition page](https://www.kaggle.com/competitions/learning-agency-lab-automated-essay-scoring-2) and place it in the `data/` directory. Ensure it follows the required format as specified in the code.
+This score demonstrates a moderate level of alignment between the model’s predictions and human annotations.
 
+Detailed results and visualizations are included in the Jupyter notebooks.
 
-## Results
+🎬 Demo
+A live demonstration video is included within the presentation file:
 
-Our AES system achieved a Cohen Kappa score of 0.51. Detailed results and analysis can be found in the ipynb files.
+File: demo/AES_Demo.pptx
 
-## Demo
+Shows model prediction flow, sample outputs, and UI interaction
 
-A demo video showcasing the functionality of our AES system is included in the `demo/` directory within the PowerPoint presentation (`AES_Demo.pptx`).
+🤝 Contributing
+We welcome your contributions to improve the AES system!
+To contribute:
 
-## Contributing
+Fork this repository
 
-We welcome contributions to enhance the system. Please fork the repository and create a pull request with your changes.
+Create a new feature branch
 
+Submit a pull request with a description of your changes
 
-## Acknowledgments
+🧾 Requirements
+The project uses the following core technologies:
 
-- Hugging Face's Transformers library for providing the RoBERTa model.
-- The Kaggle Learning Agency Lab Automated Essay Scoring 2 competition for the dataset.
-- The dataset providers and the community for their support.
+Python (with Flask for backend)
 
-## Contact
+PyTorch and Hugging Face Transformers
 
-For any questions or inquiries, please contact chaithralm17@gmail.com.
+Pandas, TQDM, and other standard libraries
+
+Details can be found in requirements.txt.
+
+🙏 Acknowledgments
+Hugging Face Transformers – for providing the pre-trained RoBERTa model
+
+Kaggle Learning Agency Lab – for hosting the AES2 dataset and competition
+
+The open-source community – for ongoing support and development inspiration
+
+👩‍💻 Project By
+Chaithra Lokasara Mahadevaswamy
+LinkedIn Profile
+🧠 AI Enthusiast | 📊 Data Alchemist | 🎓 Graduate Researcher
+🚀 Innovation Seeker | 🌟 AI Tools Research Intern @ Unicorn Tutor AI
+"Building Tomorrow with Intelligence Today"
 
